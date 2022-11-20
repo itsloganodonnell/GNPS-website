@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+/*header page*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom right, rgba(0, 39, 80, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/House-Stock-1.jpeg);
+    background-color: #002750;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section{
+    scroll-behavior: smooth;
+}
+
+/*scroll bar*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eeeeee;
+    border-radius: 100vw;
+    margin-block: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 39, 80, 1);
+    border-radius: 100vw;
+    width: 10px;
+    border: 2px solid #eeeeee;
+}
+::-webkit-scrollbar-thumb:hover{
+    scale: 150%;
+}
+
+/*header page navigation/link buttons*/
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8ad5c3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*main screen text box*/
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*contact button*/
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hero-btn:hover{
+    border: 1px solid #8ad5c3;
+    background: #8ad5c3;
+    transition: 0.5s;
+}
+.hero-btn-2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 39, 80, 1);
+    border: 1px solid rgba(0, 39, 80, 1);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hero-btn-2:hover{
+    border: 1px solid rgba(0, 39, 80, 1);
+    background: rgba(0, 39, 80, 1);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*what we offer*/
+
+.what-we-offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.col{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.offer-col{
+    flex-basis: 31%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.offer-col span{
+    font-weight: 700;
+    color: #000;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.offer-col img{
+    width: 100%;
+    border-radius: inherit;
+}
+.offer-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    transform: scale(105%);
+}
+.challenges{
+    background-color: #eee;
+    text-align: center;
+    padding: 50px;
+}
+
+/*how it works*/
+
+.how-it-works{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.how-img img{
+    width: 98%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.how-col{
+    flex-basis: 31%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.how-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    transform: scale(105%);
+}
+
+/*about us*/
+.abt-us-sec{
+    background-color: #eeeeee;
+}
+.abt-us{
+    background-color: inherit;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.abt-us-row{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 25px;
+    display: flex;
+}
+.abt-us-row h3{
+    text-align: left;
+}
+.abt-us-row p{
+    padding: 0;
+}
+.abt-us-row img{
+    height: 250px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+/*contact us*/
+
+.contact-sec{
+    width: 80%;
+    margin: 40px;
+}
+.contact-row{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-row div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-row div .fa{
+    font-size: 28px;
+    color: #777;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-row div p{
+    padding: 10px 10px 10px 30px;
+}
+.contact-row div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #777;
+    font-weight: 400;
+    padding: 0px 0px 0px 30px;
+}
+.contact-row input, .contact-row textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*footer*/
+
+.footer-sec{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #eeeeee;
+}
+.footer-sec h4{
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer-icons, .fa-facebook-f, .fa-twitter, .fa-instagram, .fa-linkedin-in{
+    color: #002750;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: rgba(0, 39, 80, 1);
+}
+.radical-href{
+    text-decoration: none;
+    color: #002750;
+    font-weight: 600;
+}
+
+/*mobile formatting*/
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .col{
+    flex-direction: column;
+    }
+    .what-we-offer h1{
+        font-size: 20px;
+    }
+    .what-we-offer h3{
+        font-size: 20px;
+    }
+    .how-img{
+        display: none;
+    }
+    .how-it-works h1{
+        font-size: 20px;
+    }
+    .how-it-works h3{
+        font-size: 15px;
+    }
+    .how-col{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .abt-us-row{
+        display:inline;
+    }
+    .abt-us-row img{
+        height: 200px;
+        border-radius: 10px;
+    }
+}
