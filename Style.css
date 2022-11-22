@@ -340,6 +340,9 @@ h3{
     .col{
     flex-direction: column;
     }
+    .col-text h1{
+        font size: 20px;
+    }
     .what-we-offer h1{
         font-size: 20px;
     }
